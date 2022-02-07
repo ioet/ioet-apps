@@ -1,0 +1,103 @@
+.toolbar {
+    justify-content: space-between;
+}
+
+.avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.username {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 0.5em;
+}
+
+.username-text {
+    margin-left: 0.5rem!important;
+}
+
+.menu-button {
+    margin: 0!important ;
+}
+
+.menu-container {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    position: absolute;
+}
+
+.icons {
+    display: grid;
+    width: 90%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 4em;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    margin-top: 10em;
+}
+
+/* 3 columns */
+@media only screen and (max-width: 955px) {
+    .icons {
+        width: 90%;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .content {
+        margin-top: 5em;
+    }
+}
+
+/* 2 columns */
+@media only screen and (max-width: 610px) {
+    .icons {
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .content {
+        margin-top: 5em;
+    }
+}
+
+/* 1 columns */
+@media only screen and (max-width: 352px) {
+    .icons {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .content {
+        margin-top: 5em;
+    }
+}
+
+/* IPAD */
+@media only screen and (max-width: 770px) {
+    .icons {
+        width: 70%;
+    }
+
+    .content {
+        margin-top: 5em;
+    }
+}
+
+/* CELL PHONE */
+@media only screen and (max-width: 380px) {
+    .icons {
+        grid-template-columns: repeat(2, 1fr);
+        width: 85%;
+    }
+    
+    .content {
+        margin-top: 2em;
+    }
+}
