@@ -23,5 +23,6 @@ frontend/yarn-debug.log*
 frontend/yarn-error.log*
 
 
- __pycache__/
- *.pyc
+__pycache__/
+*.py[cod]
+*$py.class
